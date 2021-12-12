@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 01 </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo {
+        color: #fff;
+        font-family: helvetica;
+        margin-left: 10%;
+        width: 50px;
+        padding-top: 12px;
+    }
+
+    #botoes {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        margin-right: 10%;
+        width: 300px;
+        font-family: helvetica;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #botaoHome {
+        background-color: #F9A825;
+        width: 65px;
+        justify-content: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 16px;
+        font-family: helvetica;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+
+    .ponteiro {
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    footer {
+        width: 100vw;
+        height: 80px;
+        background-color: black;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family:helvetica,Arial ;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #divMain {
+        width: 600px;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-family:helvetica,Arial, Georgia, 'Times New Roman', Times, ;
+        font-size: 20px;
+        color: #000;
+        justify-content: flex-end;
+    }
+
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #divLorem {
+        width: 300px;
+        height: 200px;
+        border-right: 2px dotted #212121;
+        font-family:Helvetica, sans-serif;
+        font-size: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+
+    #divEmail {
+        width: 300px;
+        border: solid 2px black;
+        font-family: Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        text-align: justify;
+    }
+
+    #areaEmail {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    input {
+        border: 2px solid black;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    fieldset {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    #quadrado{
+        width: 700px;
+        height: 250px;
+        border: 1px solid #158ace;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+</style>
+<body>
+    <header>
+        <div id="logo">LOGO</div>
+        <div id="botoes">
+            <div id="botaoHome">Home</div>
+            <div class="ponteiro">Contato</div>
+            <div class="ponteiro">Sobre</div>
+        </div>
+    </header>
+    <main>
+        <div id="quadrado">
+        <div id="divMain">
+            <div id="divLorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Natus nam ad omnis tempora amet reiciendis impedit exercitationem</div>
+            <div id="#areaEmail">
+                <form name="frmCadastro" method="post">
+                    <fieldset>
+                        <label style="margin-bottom: 10px">DIGITE SEU E-MAIL</label>
+                        <input style="margin-bottom: 10px" type="email" required placeholder="e-mail" name="e-mail" value="">
+                        <input style="background-color: gray;" type="submit" name="e-mail" value="ENVIAR">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        by TI - ACADEMY
+    </footer>
+</body>
+</html>
